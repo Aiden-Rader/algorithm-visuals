@@ -6,6 +6,9 @@
 .*
 ~*
 
+# Ignore a vscode setting file
+.vscode
+
 # ignore log files and databases
 *.log
 *.sql
