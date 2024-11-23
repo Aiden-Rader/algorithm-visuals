@@ -2,4 +2,11 @@
 
 # TODO Make .gitignore file structure
 
-# .vscode
+# ignore all files starting with . or ~
+.*
+~*
+
+# ignore log files and databases
+*.log
+*.sql
+*.sqlite

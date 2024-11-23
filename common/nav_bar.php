@@ -3,7 +3,7 @@
 <head>
 	<!-- Global Styles -->
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-	<link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="../styles.css">
 </head>
 
 <div class="wrapper">
@@ -18,31 +18,37 @@
 		</div>
 		<ul class="sidebar-nav">
 			<li class="sidebar-item">
-				<a href="index.php" class="sidebar-link">
+				<a href="../home-page/index.php" class="sidebar-link">
 					<i class="fa-solid fa-house"></i>
 					<span> Home </span>
 				</a>
 			</li>
 			<li class="sidebar-item">
-				<a href="sorting_algorithms.php" class="sidebar-link">
+				<a href="../data-structures/data_structures.php" class="sidebar-link">
+					<i class="fa-solid fa-sitemap"></i>
+					<span> Data Structures </span>
+				</a>
+			</li>
+			<li class="sidebar-item">
+				<a href="../sorting-algorithms/sorting_algorithms.php" class="sidebar-link">
 					<i class="fa-solid fa-sort-amount-up"></i>
 					<span> Sorting Algorithms </span>
 				</a>
 			</li>
 			<li class="sidebar-item">
-				<a href="search_alogorithms.php" class="sidebar-link">
+				<a href="../search-algorithms/search_alogorithms.php" class="sidebar-link">
 					<i class="fa-solid fa-magnifying-glass"></i>
 					<span> Search Algorithms </span>
 				</a>
 			</li>
 			<li class="sidebar-item">
-				<a href="graph_algorithms.php" class="sidebar-link">
+				<a href="../graph-algorithms/graph_algorithms.php" class="sidebar-link">
 					<i class="fa-solid fa-diagram-project"></i>
 					<span> Graph Algorithms </span>
 				</a>
 			</li>
 			<li class="sidebar-item">
-				<a href="backtracking_algorithms.php" class="sidebar-link">
+				<a href="../backtracking-algorithms/backtracking_algorithms.php" class="sidebar-link">
 					<i class="fa-solid fa-route"></i>
 					<span> Backtracking Algorithms </span>
 				</a>
@@ -71,4 +77,4 @@
 <script src="https://kit.fontawesome.com/2f900b8023.js"></script>
 
 <!-- Path to JavaScript -->
-<script src="common/nav_bar.js"></script>
+<script src="../common/scripts/nav_bar.js"></script>

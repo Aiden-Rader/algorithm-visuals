@@ -1,4 +1,5 @@
 /* This is the general dev styles page */
+/* Import some more google fonts */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
 
 /* General Stuff */
@@ -58,8 +59,25 @@ header {
 }
 
 .card:hover {
-	transform: scale(1.05);
-	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+	transform: scale(1.01);
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.card-img-top-wrapper {
+	position: relative;
+	width: 100%;
+	padding-top: 56.25%;
+	overflow: hidden;
+}
+
+.card-img-top {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	border-bottom: 1px solid #ddd;
 }
 
 .header-card {
@@ -71,6 +89,7 @@ header {
 	box-shadow: none;
 }
 
+/* Entire page */
 .main {
 	flex-grow: 1;
 	min-height: 100vh;
@@ -88,6 +107,7 @@ header {
 	padding: 0;
 }
 
+/* Sidebar object itself */
 #sidebar {
 	width: 70px;
 	min-width: 70px;
@@ -97,11 +117,13 @@ header {
 	flex-direction: column;
 }
 
+/* When sidebar is expanded */
 #sidebar.expand {
 	width: 250px;
 	min-width: 250px;
 }
 
+/* Attributes for the toggle button/dropdown button */
 .btn_toggle {
 	background-color: transparent;
 	cursor: pointer;
@@ -109,31 +131,37 @@ header {
 	padding: 1rem 1.5rem;
 }
 
+/* Toggle/dropdown button style */
 .btn_toggle i {
 	font-size: 1.5rem;
 	color: #FFF;
 }
 
+/* Sidebar logo style */
 .sidebar-logo {
 	margin: auto 0;
 }
 
+/* Sidebar logo text style */
 .sidebar-logo a {
 	color: #FFF;
 	font-size: 1.15rem;
 	font-weight: 600;
 }
 
+/* Attributes for when the sidebar is not expanded */
 #sidebar:not(.expand) .sidebar-logo,
 #sidebar:not(.expand) a.sidebar-link span {
 	display: none;
 }
 
+/* This SHOULD be the nav bar */
 .sidebar-nav {
 	padding: 2rem 0;
 	flex: 1 1 auto;
 }
 
+/* Sidebar links style */
 .sidebar-link {
 	display: flex;
 	align-items: center;
@@ -144,6 +172,7 @@ header {
 	border-left: 3px solid transparent;
 }
 
+/* Attributes for the sidebar itself */
 a.sidebar-link {
 	padding: 1rem;
 	color: #FFF;
@@ -152,6 +181,7 @@ a.sidebar-link {
 	font-size: 0.9rem;
 }
 
+/* Attributes for the icons on sidebar */
 .sidebar-link i {
 	font-size: 1.5rem;
 	width: 24px;
@@ -159,16 +189,19 @@ a.sidebar-link {
 	margin-right: 10px;
 }
 
+/* Attributes for the text on sidebar */
 a.sidebar-link:hover {
 	background-color: rgba(255, 255, 255, 0.1);
-	border-left: 3px solid #3b7ddd;
+	border-left: 3px solid #343a40;
 }
 
+/* The entire sidebar */
 .sidebar-item {
 	position: relative;
 	margin: 0;
 }
 
+/* When sidebar is not expanded sidebar and dropdown styles */
 #sidebar:not(.expand) .sidebar-item .sidebar-dropdown {
 	position: absolute;
 	top: 0;
@@ -179,6 +212,7 @@ a.sidebar-link:hover {
 	display: none;
 }
 
+/* When sidebar is not expanded hover and click styles */
 #sidebar:not(.expand) .sidebar-item:hover .has-dropdown+.sidebar-dropdown {
 	display: block;
 	max-height: 15em;
@@ -186,6 +220,7 @@ a.sidebar-link:hover {
 	opacity: 1;
 }
 
+/* When sidebar is expanded styles for dropdown */
 #sidebar.expand .sidebar-link[data-bs-toggle="collapse"]::after {
 	border: solid;
 	border-width: 0 .075rem .075rem 0;
@@ -199,6 +234,7 @@ a.sidebar-link:hover {
 	transition: all .2s ease-out;
 }
 
+/* When sidebar is expanded styles for dropdown links */
 #sidebar.expand .sidebar-link[data-bs-toggle="collapse"].collapsed::after {
 	transform: rotate(45deg);
 	transition: all .2s ease-out;
