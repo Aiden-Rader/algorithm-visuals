@@ -1,0 +1,5 @@
+# This will be what files we need to ignore while commiting to the repo on github!
+
+# TODO Make .gitignore file structure
+
+# .vscode

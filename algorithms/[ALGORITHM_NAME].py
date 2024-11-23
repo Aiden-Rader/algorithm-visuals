@@ -1,0 +1,1 @@
+# Boilerplate code for specific algoirhtms, copy this file and do some shit with it
