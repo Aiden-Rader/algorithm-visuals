@@ -7,9 +7,14 @@
 ~*
 
 # Ignore a vscode setting file
-.vscode
+*.vscode
+*.settings.json
 
 # ignore log files and databases
 *.log
 *.sql
 *.sqlite
+
+# Manim Render stuff
+*.__pycache__
+*.renders\media

@@ -1,4 +1,4 @@
-<!-- Arrays Page of website -->
+<!-- Boilerplate code for Creator Page, copy this file and do some shit with it -->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -6,7 +6,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Arrays</title>
+	<title>Creator</title>
 </head>
 
 <body>
@@ -17,9 +17,9 @@
 		<div class="card mb-4 header-card">
 			<div class="card-body text-center">
 				<h1 class="card-title">
-					<i class="fa-solid fa-sitemap"></i>Arrays
+					<i class="fa-solid [ICON NAME]"></i>Creator
 				</h1>
-				<p class="card-text">This is where you can visualize the commonly used data structure of Arrays.</p>
+				<p class="card-text">This is where you can visualize Creator.</p>
 			</div>
 		</div>
 	</div>

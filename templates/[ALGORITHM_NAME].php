@@ -25,15 +25,5 @@
 	</div>
 
 	<!-- Footer Section -->
-	<footer class="text-center">
-		<div>Created by Aiden Rader | Learn and Understand Algorithms!</div>
-		<div>
-			<a href="https://www.linkedin.com/in/aiden-rader/" target="_blank">
-				<i class="fa-brands fa-linkedin"></i> LinkedIn
-			</a> |
-			<a href="https://github.com/Aiden-Rader" target="_blank">
-				<i class="fa-brands fa-github"></i> GitHub
-			</a>
-		</div>
-	</footer>
+	<?php include '../common/footer.php'; ?>
 </body>

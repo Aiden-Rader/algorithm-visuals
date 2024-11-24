@@ -13,7 +13,7 @@
 				<i class="fa-solid fa-grip-lines"></i>
 			</button>
 			<div class="sidebar-logo">
-				<a href="#">Navigation</a>
+				<a href="">Navigation</a>
 			</div>
 		</div>
 		<ul class="sidebar-nav">
@@ -56,10 +56,24 @@
 		</ul>
 		<div class="sidebar-footer">
 			<li class="sidebar-item">
-				<a href="about.php" class="sidebar-link">
+				<a class="sidebar-link" data-bs-toggle="collapse" href="#about_dropdown" role="button" aria-expanded="false" aria-controls="about_dropdown">
 					<i class="fa-solid fa-circle-info"></i>
 					<span> About </span>
 				</a>
+				<ul class="collapse" id="about_dropdown">
+					<li class="sidebar-item">
+						<a href="../common/sources.php" class="sidebar-link">
+							<i class="fa-solid fa-quote-right"></i>
+							<span> Sources </span>
+						</a>
+					</li>
+					<li class="sidebar-item">
+						<a href="../common/creator.php" class="sidebar-link">
+							<i class="fa-solid fa-user"></i>
+							<span> Creator </span>
+						</a>
+					</li>
+				</ul>
 			</li>
 			<li class="sidebar-item">
 				<a href="settings.php" class="sidebar-link">
