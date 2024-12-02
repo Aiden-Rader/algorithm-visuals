@@ -21,7 +21,7 @@ class MainDataStructureRender(Scene):
 		stack.move_to(array.get_center() + RIGHT * 4 + DOWN * 1)
 		tree.move_to(array.get_center() + DOWN * 3)
 		queue.move_to(linked_list.get_center() + DOWN * 1.5)
-		graph.move_to(stack.get_center() + DOWN * 1.5)
+		graph.move_to(stack.get_center() + DOWN * 2)
 		heap.move_to(tree.get_center() + LEFT * 4 + DOWN * 1)
 		hash_map.move_to(tree.get_center() + RIGHT * 4 + DOWN * 1)
 
@@ -50,14 +50,14 @@ class MainDataStructureRender(Scene):
 
 		# Highlight linear data structures
 		self.highlight_bracket(
-			nodes=[array, linked_list, stack, queue, graph],
+			nodes=[array, linked_list, stack, queue],
 			label="Linear Data Structures",
 			direction=LEFT
 		)
 
 		# Highlight non-linear data structures
 		self.highlight_bracket(
-			nodes=[tree, heap, hash_map],
+			nodes=[tree, heap, hash_map, graph],
 			label="Non-Linear Data Structures",
 			direction=RIGHT
 		)

@@ -11,7 +11,7 @@
 
 <body>
 	<div class="wrapper">
-		<?php include __DIR__ . '/common/nav_bar.php'; ?>
+		<?php include 'common/nav_bar.php'; ?>
 		<div class="main p-3">
 
 			<!-- Page title and subtitle -->
@@ -35,7 +35,7 @@
 			<hr>
 
 			<!-- First Row -->
-			<div class="row">
+			<div class="row justify-content-center">
 				<div class="col-md-4">
 					<a href="../data-structures-page/data_structures.php" class="card mb-4 text-decoration-none text-dark">
 						<div class="card-body">
@@ -90,7 +90,7 @@
 			<hr>
 
 			<!-- Second Row -->
-			<div class="row">
+			<div class="row justify-content-center">
 				<div class="col-md-4">
 					<a href="algorithm-visuals/graph-algorithms/graph_algorithms.php" class="card mb-4 text-decoration-none text-dark">
 						<div class="card-body">
@@ -122,7 +122,7 @@
 	</div>
 
 	<!-- Home Page Footer Section -->
-	<?php include __DIR__ . '/common/footer.php'; ?>
+	<?php include 'common/footer.php'; ?>
 </body>
 
 </html>
