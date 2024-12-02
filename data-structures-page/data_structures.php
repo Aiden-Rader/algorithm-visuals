@@ -76,7 +76,7 @@
 					</a>
 				</div>
 				<div class="col-md-4">
-					<a href="../queues/queues.php" class="card mb-4 text-decoration-none text-dark">
+					<a href="../queues/queue.php" class="card mb-4 text-decoration-none text-dark">
 						<div class="card-body">
 							<div class="card-img-top-wrapper">
 								<img src="../manim-renders/gifs/QueueRender.gif" class="card-img-top rounded-top" alt="Queues Visualization">
@@ -89,7 +89,7 @@
 					</a>
 				</div>
 				<div class="col-md-4">
-					<a href="../stacks/stacks.php" class="card mb-4 text-decoration-none text-dark">
+					<a href="../stacks/stack.php" class="card mb-4 text-decoration-none text-dark">
 						<div class="card-body">
 							<div class="card-img-top-wrapper">
 								<img src="../manim-renders/gifs/StackRender.gif" class="card-img-top rounded-top" alt="Stacks Visualization">
@@ -118,10 +118,10 @@
 			<!-- Second Row -->
 			<div class="row">
 				<div class="col-md-4">
-					<a href="../arrays/trees.php" class="card mb-4 text-decoration-none text-dark">
+					<a href="../arrays/tree.php" class="card mb-4 text-decoration-none text-dark">
 						<div class="card-body">
 							<div class="card-img-top-wrapper">
-								<!-- <img src="../manim-renders/gifs/ArrayRender.gif" class="card-img-top rounded-top" alt="Arrays Visualization"> -->
+								<img src="../manim-renders/gifs/TreeRender.gif" class="card-img-top rounded-top" alt="Trees Visualization">
 							</div>
 							<div class="card-body text-center">
 								<h5 class="card-title fw-bold">Trees</h5>
@@ -131,10 +131,10 @@
 					</a>
 				</div>
 				<div class="col-md-4">
-					<a href="../arrays/graphs.php" class="card mb-4 text-decoration-none text-dark">
+					<a href="../arrays/graph.php" class="card mb-4 text-decoration-none text-dark">
 						<div class="card-body">
 							<div class="card-img-top-wrapper">
-								<!-- <img src="../manim-renders/gifs/ArrayRender.gif" class="card-img-top rounded-top" alt="Arrays Visualization"> -->
+								<img src="../manim-renders/gifs/GraphRender.gif" class="card-img-top rounded-top" alt="Graphs Visualization">
 							</div>
 							<div class="card-body text-center">
 								<h5 class="card-title fw-bold">Graphs</h5>
@@ -144,10 +144,10 @@
 					</a>
 				</div>
 				<div class="col-md-4">
-					<a href="../arrays/heaps.php" class="card mb-4 text-decoration-none text-dark">
+					<a href="../arrays/heap.php" class="card mb-4 text-decoration-none text-dark">
 						<div class="card-body">
 							<div class="card-img-top-wrapper">
-								<!-- <img src="../manim-renders/gifs/ArrayRender.gif" class="card-img-top rounded-top" alt="Arrays Visualization"> -->
+								<!-- <img src="../manim-renders/gifs/HeapRender.gif" class="card-img-top rounded-top" alt="Heaps Visualization"> -->
 							</div>
 							<div class="card-body text-center">
 								<h5 class="card-title fw-bold">Heaps</h5>
@@ -157,10 +157,10 @@
 					</a>
 				</div>
 				<div class="col-md-4">
-					<a href="../arrays/hash_tables.php" class="card mb-4 text-decoration-none text-dark">
+					<a href="../arrays/hash_map.php" class="card mb-4 text-decoration-none text-dark">
 						<div class="card-body">
 							<div class="card-img-top-wrapper">
-								<!-- <img src="../manim-renders/gifs/ArrayRender.gif" class="card-img-top rounded-top" alt="Arrays Visualization"> -->
+								<!-- <img src="../manim-renders/gifs/HashMapRender.gif" class="card-img-top rounded-top" alt="Hash Maps Visualization"> -->
 							</div>
 							<div class="card-body text-center">
 								<h5 class="card-title fw-bold">Hash Tables / Dictionaries / Maps</h5>

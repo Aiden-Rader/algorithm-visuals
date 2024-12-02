@@ -1,20 +1,14 @@
 # This will be what files we need to ignore while commiting to the repo on github!
 
-# TODO Make .gitignore file structure
-
-# ignore all files starting with . or ~
-.*
-~*
-
 # Ignore a vscode setting file
-*.vscode
+.vscode
 *.settings.json
 
-# ignore log files and databases
+# Ignore a log files and databases
 *.log
 *.sql
 *.sqlite
 
-# Manim Render stuff
-*.__pycache__
-*.renders\media
+# Ignore files starting with . or ~
+.*
+~*
