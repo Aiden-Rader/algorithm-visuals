@@ -28,7 +28,7 @@
 				</a>
 			</li>
 			<li class="sidebar-item">
-				<a href="../sorting-algorithms-page/sorting_alghorithms.php" class="sidebar-link">
+				<a href="../sorting-algorithms-page/sorting_algorithms.php" class="sidebar-link">
 					<i class="fa-solid fa-sort-amount-up"></i>
 					<span> Sorting Algorithms </span>
 				</a>
@@ -60,13 +60,13 @@
 				</a>
 				<ul class="collapse" id="about_dropdown">
 					<li class="sidebar-item">
-						<a href="/algorithm-visuals/common/sources.php" class="sidebar-link">
+						<a href="../common/sources.php" class="sidebar-link">
 							<i class="fa-solid fa-quote-right"></i>
 							<span> Sources </span>
 						</a>
 					</li>
 					<li class="sidebar-item">
-						<a href="/algorithm-visuals/common/creator.php" class="sidebar-link">
+						<a href="../common/creator.php" class="sidebar-link">
 							<i class="fa-solid fa-user"></i>
 							<span> Creator </span>
 						</a>
@@ -74,7 +74,7 @@
 				</ul>
 			</li>
 			<li class="sidebar-item">
-				<a href="/algorithm-visuals/common/settings.php" class="sidebar-link">
+				<a href="../common/settings.php" class="sidebar-link">
 					<i class="fa-solid fa-gear"></i>
 					<span> Settings </span>
 				</a>

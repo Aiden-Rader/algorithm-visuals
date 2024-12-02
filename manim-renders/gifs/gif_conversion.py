@@ -23,9 +23,9 @@ def convert_mp4_to_gif(input_path, output_path):
 # MAIN FUNCTION #
 
 # Paths for input and output (change this!)
-clip_name = "GraphRender.mp4"
-output_name = "GraphRender.gif"
-render_name = "graph_render"
+clip_name = "MainDataStructureRender.mp4"
+output_name = "MainDataStructureRender.gif"
+render_name = "main_data_structures_render"
 current_dir = os.getcwd()
 
 input_dir = f"{current_dir}/manim-renders/media/videos/{render_name}/1080p60/"

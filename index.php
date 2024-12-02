@@ -40,7 +40,7 @@
 					<a href="../data-structures-page/data_structures.php" class="card mb-4 text-decoration-none text-dark">
 						<div class="card-body">
 							<div class="card-img-top-wrapper">
-								<img src="../images/Data_Struct_Card.gif" class="card-img-top rounded-top" alt="Data Structures Visualization">
+								<img src="../manim-renders/gifs/MainDataStructureRender.gif" class="card-img-top rounded-top" alt="Data Structures Visualization">
 							</div>
 							<div class="card-body text-center">
 								<h5 class="card-title fw-bold">Data Structures</h5>
@@ -53,7 +53,7 @@
 					<a href="../sorting-algorithms-page/sorting_alghorithms.php" class="card mb-4 text-decoration-none text-dark">
 						<div class="card-body">
 							<div class="card-img-top-wrapper">
-								<img src="../images/Sorting_Algo_Card.gif" class="card-img-top rounded-top" alt="Sorting Algorithms Visualization">
+								<img src="../temp/Sorting_Algo_Card.gif" class="card-img-top rounded-top" alt="Sorting Algorithms Visualization">
 							</div>
 							<div class="card-body text-center">
 								<h5 class="card-title fw-bold">Sorting Algorithms</h5>
@@ -66,7 +66,7 @@
 					<a href="../search-algorithms-page/search_algorithms.php" class="card mb-4 text-decoration-none text-dark">
 						<div class="card-body">
 							<div class="card-img-top-wrapper">
-								<img src="algorithm-visuals/home-page/images/Search_Algo_Card.gif" class="card-img-top rounded-top" alt="Sorting Algorithms Visualization">
+								<img src="../temp/Search_Algo_Card.gif" class="card-img-top rounded-top" alt="Sorting Algorithms Visualization">
 							</div>
 							<div class="card-body text-center">
 								<h5 class="card-title fw-bold">Search Algorithms</h5>
@@ -95,7 +95,7 @@
 					<a href="algorithm-visuals/graph-algorithms/graph_algorithms.php" class="card mb-4 text-decoration-none text-dark">
 						<div class="card-body">
 							<div class="card-img-top-wrapper">
-								<img src="algorithm-visuals/home-page/images/Graph_Algo_Card.gif" class="card-img-top rounded-top" alt="Graph Algorithms Visualization">
+								<img src="../temp/Graph_Algo_Card.gif" class="card-img-top rounded-top" alt="Graph Algorithms Visualization">
 							</div>
 							<div class="card-body text-center">
 								<h5 class="card-title fw-bold">Graph Algorithms</h5>
@@ -108,7 +108,7 @@
 					<a href="../backtracking-algorithms/backtracking_algorithms.php" class="card mb-4 text-decoration-none text-dark">
 						<div class="card-body">
 							<div class="card-img-top-wrapper">
-								<img src="../home-page/images/Backtracking_Algo_Card.gif" class="card-img-top rounded-top" alt="Backtracking Algorithms Visualization">
+								<img src="../temp/Backtracking_Algo_Card.gif" class="card-img-top rounded-top" alt="Backtracking Algorithms Visualization">
 							</div>
 							<div class="card-body text-center">
 								<h5 class="card-title fw-bold">Backtracking Algorithms</h5>

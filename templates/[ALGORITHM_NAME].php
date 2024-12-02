@@ -1,4 +1,4 @@
-<!-- Boilerplate code for [ALGORITHM NAME], copy this file and do some shit with it -->
+<!-- [ALGORITHM NAME] Home Page of website -->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -12,18 +12,21 @@
 <body>
 	<div class="wrapper">
 		<?php include '../common/nav_bar.php'; ?>
+		<div class="main p-3">
 
-		<!-- Page title and subtitle -->
-		<div class="card mb-4 header-card">
-			<div class="card-body text-center">
-				<h1 class="card-title">
-					<i class="fa-solid [ICON NAME]"></i>[ALGORITHM NAME]
-				</h1>
-				<p class="card-text">This is where you can visualize [ALGORITHM NAME].</p>
+			<!-- Page title and subtitle -->
+			<div class="card mb-4 header-card">
+				<div class="card-body text-center">
+					<h1 class="card-title display-4">[ALGORITHM NAME]</h1>
+					<p class="card-text lead">[ALGORITHM DESCRIPTION]</p>
+				</div>
 			</div>
 		</div>
 	</div>
 
 	<!-- Footer Section -->
 	<?php include '../common/footer.php'; ?>
+
+	<!-- Scripts for [ALGORITHM NAME] Page goes here -->
+	<script src="[ALGORITHM_NAME].js"></script>
 </body>

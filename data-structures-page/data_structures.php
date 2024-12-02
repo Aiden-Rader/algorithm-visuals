@@ -35,7 +35,7 @@
 			<hr>
 
 			<!-- First Row -->
-			<div class="row">
+			<div class="row justify-content-center">
 				<div class="col-md-4">
 					<a href="../arrays/arrays.php" class="card mb-4 text-decoration-none text-dark">
 						<div class="card-body">
@@ -116,7 +116,7 @@
 			<hr>
 
 			<!-- Second Row -->
-			<div class="row">
+			<div class="row justify-content-center">
 				<div class="col-md-4">
 					<a href="../arrays/tree.php" class="card mb-4 text-decoration-none text-dark">
 						<div class="card-body">
@@ -176,6 +176,6 @@
 	<!-- Footer Section -->
 	<?php include '../common/footer.php'; ?>
 
-	<!-- JS for Data Structures Page goes here -->
+	<!-- Scripts for Data Structures Page goes here -->
 	<script src="data_structures.js"></script>
 </body>
