@@ -3,14 +3,14 @@
 	<div class="container">
 		<div class="row">
 			<!-- About Section -->
-			<div class="col-md-5 text-center text-md-start">
+			<div class="col-md-4 text-center text-md-start">
 				<h5 class="footer-title">About</h5>
 				<p>Created by <strong>Aiden Rader</strong></p>
 				<p>Just a dude with a passion for building things with code when I should be studying. <i class="fa-solid fa-smile"></i></p>
 			</div>
 
 			<!-- Quick Links Section -->
-			<div class="col-md-3 text-center">
+			<div class="col-md-4 text-center">
 				<h5 class="footer-title">Quick Links</h5>
 				<ul class="footer-links list-unstyled">
 					<li><a href="https://www.linkedin.com/in/aiden-rader/" target="_blank"><i class="fa-brands fa-linkedin"></i> LinkedIn</a></li>
