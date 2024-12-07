@@ -1,17 +1,34 @@
-var sidebarState = localStorage.getItem('sidebarState');
+/**
+ * Nav Bar Script
+ * Description:
+ * - Implements the script for the navigation bar. Toggles the sidebar when the toggle button is clicked.
+ *
+ * Author: Aiden Rader
+ * Date: 12.07.2024
+ *
+ * Dependencies:
+ * - Requires jQuery.
+ */
 
-$(document).ready(function() {
+var sidebarState = localStorage.getItem('sidebarState') || 'collapsed';
 
-	// Check local storage for sidebar state
-	if (sidebarState) {
-		$("#sidebar").toggleClass("expand", sidebarState == "expanded");
-	}
+$(document).ready(function () {
+	// Initialize sidebar state
+	var sidebarState = localStorage.getItem('sidebarState') || 'collapsed';
+	toggleSidebar(sidebarState === 'expanded');
 
-	$("#btn_toggle").click(function(e) {
-		e.preventDefault();
-		$("#sidebar").toggleClass("expand");
-
-		// Set local storage for sidebar state
-		localStorage.setItem('sidebarState', $("#sidebar").hasClass("expand") ? "expanded" : "collapsed");
+	// Sidebar toggle button
+	$("#btn_toggle").click(function () {
+		var isExpanded = $("#sidebar").hasClass("expand");
+		toggleSidebar(!isExpanded);
+		localStorage.setItem('sidebarState', !isExpanded ? 'expanded' : 'collapsed');
 	});
 });
+
+/**
+ * Toggles the sidebar expanded/collapsed state.
+ */
+function toggleSidebar(expand) {
+	$("#sidebar").toggleClass("expand", expand);
+	$(".sidebar-link span").toggle(expand);
+}

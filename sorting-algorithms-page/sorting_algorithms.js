@@ -1,10 +1,10 @@
 /**
- * [ALGORITHM/FEATURE NAME]
+ * Sorting Algoirthms Page Script
  * Description:
  * - Briefly describe what this script does, its purpose, and where it's used.
  *
  * Author: Aiden Rader
- * Date: mm.dd.yyyy
+ * Date: 12.06.2024
  *
  * Notes:
  * - Mention any assumptions or constraints.
@@ -15,6 +15,11 @@
 $(document).ready(function () {
 	console.log("jQuery is ready!");
 
+	// Inital function calls
+	observeCards();
+	markComingSoonCards();
+	initTypingAnimation("Sorting Algoirthms", "typing-text-SortA");
+
 	// ==============================
 	// Constants and Configurations
 	// ==============================
@@ -22,37 +27,6 @@ $(document).ready(function () {
 		setting1: true,
 		setting2: "value",
 	};
-
-	// ==============================
-	// Utility Functions
-	// ==============================
-
-	/**
-	 * Utility function to log messages (customizable).
-	 * @param {string} message - The message to log.
-	 * @param {string} [type="info"] - The type of message ("info", "warn", "error").
-	 */
-	function logMessage(message, type = "info") {
-		const prefix = `[${type.toUpperCase()}]:`;
-		console.log(`${prefix} ${message}`);
-	}
-
-	// ==============================
-	// Main Algorithm/Feature
-	// ==============================
-
-	/**
-	 * Main function to execute the [ALGORITHM/FEATURE NAME].
-	 * @param {any} input - The input data for the function.
-	 * @returns {any} The result of the execution.
-	 */
-	function mainFunction(input) {
-		logMessage("Executing mainFunction with input: " + input, "info");
-
-		// Your algorithm/feature implementation goes here
-		let result = input; // Replace this with actual logic
-		return result;
-	}
 
 	// ==============================
 	// Event Handlers
@@ -78,3 +52,34 @@ $(document).ready(function () {
 		logMessage("User input: " + inputValue, "info");
 	});
 });
+
+// ==============================
+// Utility Functions
+// ==============================
+
+/**
+ * Utility function to log messages (customizable).
+ * @param {string} message - The message to log.
+ * @param {string} [type="info"] - The type of message ("info", "warn", "error").
+ */
+function logMessage(message, type = "info") {
+	const prefix = `[${type.toUpperCase()}]:`;
+	console.log(`${prefix} ${message}`);
+}
+
+// ==============================
+// Main Algorithm/Feature
+// ==============================
+
+/**
+ * Main function to execute the [ALGORITHM/FEATURE NAME].
+ * @param {any} input - The input data for the function.
+ * @returns {any} The result of the execution.
+ */
+function mainFunction(input) {
+	logMessage("Executing mainFunction with input: " + input, "info");
+
+	// Your algorithm/feature implementation goes here
+	let result = input; // Replace this with actual logic
+	return result;
+}

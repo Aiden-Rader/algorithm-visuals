@@ -1,19 +1,21 @@
 /**
- * [ALGORITHM/FEATURE NAME]
+ * Search Algorithms Page Script
  * Description:
- * - Briefly describe what this script does, its purpose, and where it's used.
+ * - Search Algorithms Page Script that includes the logic for the Search Algorithms Page, such as running the main function and handling user input.
  *
  * Author: Aiden Rader
- * Date: mm.dd.yyyy
+ * Date: 12.07.2024
  *
- * Notes:
- * - Mention any assumptions or constraints.
- * - Highlight dependencies or required libraries (like jQuery).
  */
 
 // Ensure the script runs only after the DOM is ready
 $(document).ready(function () {
 	console.log("jQuery is ready!");
+
+	// Inital function calls
+	observeCards();
+	markComingSoonCards();
+	initTypingAnimation("Search Algorithms", "typing-text-SearchA");
 
 	// ==============================
 	// Constants and Configurations

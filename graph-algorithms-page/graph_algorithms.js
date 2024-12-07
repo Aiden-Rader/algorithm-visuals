@@ -1,19 +1,21 @@
 /**
- * [ALGORITHM/FEATURE NAME]
+ * Graph Algorithms Script
  * Description:
- * - Briefly describe what this script does, its purpose, and where it's used.
+ * - Graph Algorithms Page Script that includes the logic for the Graph Algorithms Page, such as running the main function and handling user input.
  *
  * Author: Aiden Rader
- * Date: mm.dd.yyyy
+ * Date: 12.07.2024
  *
- * Notes:
- * - Mention any assumptions or constraints.
- * - Highlight dependencies or required libraries (like jQuery).
  */
 
 // Ensure the script runs only after the DOM is ready
 $(document).ready(function () {
 	console.log("jQuery is ready!");
+
+	// Inital function calls
+	observeCards();
+	markComingSoonCards();
+	initTypingAnimation("Graph Algorithms", "typing-text-GraphA");
 
 	// ==============================
 	// Constants and Configurations

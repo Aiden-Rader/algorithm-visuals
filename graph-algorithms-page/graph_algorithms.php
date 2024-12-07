@@ -1,4 +1,4 @@
-<!-- Sorting Algorithms Home Page of website -->
+<!-- Graph Algorithms Home Page of website -->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -6,7 +6,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Sorting Algorithms</title>
+	<title>Graph Algorithms</title>
 </head>
 
 <body>
@@ -17,11 +17,10 @@
 			<!-- Page title and subtitle -->
 			<div class="card mb-4 header-card">
 				<div class="card-body text-center">
-					<h1 class="card-title display-4 typing-text" id="typing-text-SortA"></h1>
-					<p class="card-text lead">This is where you can visualize sorting algorithms. Sorting algorithms are used to sort data in a specific order.</p>
+					<h1 class="card-title display-4 typing-text" id="typing-text-GraphA"></h1>
+					<p class="card-text lead">This is where you can visualize graph algorithms. Graph algorithms are used to represent and manipulate graphs.</p>
 				</div>
 			</div>
-
 			<div class="my-4"></div>
 
 			<!-- [SECTION NAME] Subheader (Optional) -->
@@ -82,8 +81,8 @@
 	<?php include '../common/footer.php'; ?>
 
 	<!-- Path to Common JavaScript -->
-	<script src="/common/scripts/common_scripts.js"></script>
+	<script src="../common/scripts/common_scripts.js"></script>
 
-	<!-- Scripts for Sorting Algorithms Page goes here -->
-	<script src="sorting_algorithms.js"></script>
+	<!-- Scripts for Graph Algorithms Page goes here -->
+	<script src="graph_algorithms.js"></script>
 </body>

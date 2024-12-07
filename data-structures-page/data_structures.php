@@ -17,26 +17,26 @@
 			<!-- Page title and subtitle -->
 			<div class="card mb-4 header-card">
 				<div class="card-body text-center">
-					<h1 class="card-title display-4">Data Structures</h1>
+					<h1 class="card-title display-4 typing-text" id="typing-text-DS"></h1>
 					<p class="card-text lead">This is where you can visualize different commonly used data structures.</p>
 				</div>
 			</div>
 
-			<hr>
+			<div class="my-4"></div>
 
 			<!-- Linear Data Structures Subheader -->
 			<div class="row mb-4">
 				<div class="col text-center">
-					<h2>Linear Data Structures</h2>
+					<h2><i class="fa fa-list-ul"></i> Linear Data Structures</h2>
 					<p>A <b><i>"Linear Data Structure"</i></b> is a type of data structure in which elements are arranged in a sequential or linear order. In this arrangement, each element has a unique predecessor and successor (except for the first and last elements), making traversal of the data straightforward</p>
 				</div>
 			</div>
 
-			<hr>
+			<div class="my-4"></div>
 
 			<!-- First Row -->
 			<div class="row justify-content-center">
-				<div class="col-md-4">
+				<div class="col-md-4 content-card">
 					<a href="../arrays/arrays.php" class="card mb-4 text-decoration-none text-dark">
 						<div class="card-body">
 							<div class="card-img-top-wrapper">
@@ -49,7 +49,7 @@
 						</div>
 					</a>
 				</div>
-				<div class="col-md-4">
+				<div class="col-md-4 content-card">
 					<a href="../linked-lists/linked_lists.php" class="card mb-4 text-decoration-none text-dark">
 						<div class="card-body">
 							<div class="card-img-top-wrapper">
@@ -62,7 +62,7 @@
 						</div>
 					</a>
 				</div>
-				<div class="col-md-4">
+				<div class="col-md-4 content-card">
 					<a href="../doubly-linked-list/doubly_linked_list.php" class="card mb-4 text-decoration-none text-dark">
 						<div class="card-body">
 							<div class="card-img-top-wrapper">
@@ -75,7 +75,7 @@
 						</div>
 					</a>
 				</div>
-				<div class="col-md-4">
+				<div class="col-md-4 content-card">
 					<a href="../queues/queue.php" class="card mb-4 text-decoration-none text-dark">
 						<div class="card-body">
 							<div class="card-img-top-wrapper">
@@ -88,7 +88,7 @@
 						</div>
 					</a>
 				</div>
-				<div class="col-md-4">
+				<div class="col-md-4 content-card">
 					<a href="../stacks/stack.php" class="card mb-4 text-decoration-none text-dark">
 						<div class="card-body">
 							<div class="card-img-top-wrapper">
@@ -103,21 +103,21 @@
 				</div>
 			</div>
 
-			<hr>
+			<div class="my-4"></div>
 
 			<!-- Non-Linear Data Structures Subheader -->
 			<div class="row mb-4">
 				<div class="col text-center">
-					<h2>Non-Linear Data Structures</h2>
+					<h2><i class="fa fa-sitemap"></i> Non-Linear Data Structures</h2>
 					<p>A <b><i>"Non-Linear Data Structure"</i></b> is a type of data structure where elements are not arranged sequentially. Instead, they are organized in a hierarchical or interconnected manner, allowing for more complex relationships between elements. Unlike linear structures, elements in non-linear data structures may have multiple predecessors and successors.</p>
 				</div>
 			</div>
 
-			<hr>
+			<div class="my-4"></div>
 
 			<!-- Second Row -->
 			<div class="row justify-content-center">
-				<div class="col-md-4">
+				<div class="col-md-4 content-card">
 					<a href="../arrays/tree.php" class="card mb-4 text-decoration-none text-dark">
 						<div class="card-body">
 							<div class="card-img-top-wrapper">
@@ -130,7 +130,7 @@
 						</div>
 					</a>
 				</div>
-				<div class="col-md-4">
+				<div class="col-md-4 content-card">
 					<a href="../arrays/graph.php" class="card mb-4 text-decoration-none text-dark">
 						<div class="card-body">
 							<div class="card-img-top-wrapper">
@@ -143,7 +143,7 @@
 						</div>
 					</a>
 				</div>
-				<div class="col-md-4">
+				<div class="col-md-4 content-card">
 					<a href="../arrays/heap.php" class="card mb-4 text-decoration-none text-dark">
 						<div class="card-body">
 							<div class="card-img-top-wrapper">
@@ -156,7 +156,7 @@
 						</div>
 					</a>
 				</div>
-				<div class="col-md-4">
+				<div class="col-md-4 content-card">
 					<a href="../arrays/hash_map.php" class="card mb-4 text-decoration-none text-dark">
 						<div class="card-body">
 							<div class="card-img-top-wrapper">
@@ -175,6 +175,9 @@
 
 	<!-- Footer Section -->
 	<?php include '../common/footer.php'; ?>
+
+	<!-- Path to Common JavaScript -->
+	<script src="/common/scripts/common_scripts.js"></script>
 
 	<!-- Scripts for Data Structures Page goes here -->
 	<script src="data_structures.js"></script>

@@ -27,17 +27,91 @@ body {
 	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-footer {
-	background-color: #343a40;
-	color: white;
-	padding: 20px;
-	text-align: center;
-	flex-shrink: 0;
-	width: 100%;
-	box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+/* Footer Styling */
+.footer {
+	background-color: #1f1f1f;
+	color: #e0e0e0;
+	padding: 20px 0;
+	font-size: 0.9rem;
+	border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
+.footer-container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px 50px;
+}
+
+.footer-title {
+	font-size: 1.2rem;
+	font-weight: bold;
+	color: #fff;
+	margin-bottom: 10px;
+}
+
+.footer p {
+	margin-bottom: 0.5rem;
+	color: #bbbbbb;
+}
+
+.footer-links {
+	padding: 0;
+}
+
+.footer-links li {
+	list-style: none;
+	margin-bottom: 0.5rem;
+}
+
+.footer-links a {
+	color: #aaa;
+	text-decoration: none;
+	transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+	color: #007bff;
+}
+
+.footer i {
+	margin-right: 5px;
+}
+
+@media (max-width: 768px) {
+	.footer {
+		text-align: center;
+	.footer .row>div {
+			margin-bottom: 20px;
+		}
+	}
+}
+
+/* Back to Top Button */
+#back-to-top {
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	display: none;
+	width: 50px;
+	height: 50px;
+	background-color: #007bff;
+	color: #fff;
+	border: none;
+	border-radius: 50%;
+	font-size: 1.2rem;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+	cursor: pointer;
+	transition: all 0.3s ease;
+	z-index: 1000;
+}
+
+#back-to-top:hover {
+	background-color: #0056b3;
+	box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
+}
 .wrapper {
+	min-height: 100vh;
 	display: flex;
 }
 
@@ -54,15 +128,41 @@ header {
 	color: white;
 }
 
-.card {
-	transition: transform 0.2s, box-shadow 0.2s;
+/* Content card styling */
+.content-card {
+	transition: transform 0.2s, box-shadow 0.2s, opacity 0.8s, transform 0.8s;
+	opacity: 0;
+	transform: translateY(20px);
 }
 
-.card:hover {
+/* When card is visible */
+.content-card.visible {
+	opacity: 1;
+	transform: translateY(0);
+}
+
+/* Hover effect */
+.content-card:hover {
 	transform: scale(1.03);
-	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
-}
-
+	box-shadow: none;
+	}
+		/* Additional styles for "COMING SOON" cards */
+		.content-card.coming-soon {
+			filter: grayscale(100%);
+			opacity: 0;
+			pointer-events: none;
+		}
+	
+		.content-card.coming-soon.visible {
+			opacity: 0.6;
+		}
+	
+		.content-card.coming-soon:hover {
+			transform: none;
+			filter: grayscale(100%);
+		}
+	
+		/* Manim animation on the card */
 .card-img-top-wrapper {
 	position: relative;
 	width: 100%;
@@ -89,6 +189,27 @@ header {
 	box-shadow: none;
 }
 
+.typing-text {
+	display: inline-block;
+	border-right: 2px solid black;
+	white-space: nowrap;
+	overflow: hidden;
+	animation: blink-cursor 1s steps(2, start) infinite;
+}
+
+@keyframes blink-cursor {
+	0% {
+		border-right-color: black;
+	}
+
+	50% {
+		border-right-color: transparent;
+	}
+
+	100% {
+		border-right-color: black;
+	}
+}
 /* Entire page */
 .main {
 	flex-grow: 1;
@@ -238,4 +359,65 @@ a.sidebar-link:hover {
 #sidebar.expand .sidebar-link[data-bs-toggle="collapse"].collapsed::after {
 	transform: rotate(45deg);
 	transition: all .2s ease-out;
+}
+/* Hide "About" dropdown when sidebar is collapsed */
+#sidebar:not(.expand) #about_dropdown {
+	display: none !important;
+}
+
+.sidebar-item.active .sidebar-link {
+	background-color: rgba(255, 255, 255, 0.1);
+	border-left: 3px solid #FFF;
+	font-weight: bold;
+}
+
+/* Settings Page Styling */
+
+/* Dark Mode */
+/* General styles for dark mode */
+.dark-mode {
+	background-color: #121212;
+	color: #e0e0e0;
+}
+
+/* Styling for buttons */
+.dark-mode button {
+	background-color: #1e1e1e;
+	color: #e0e0e0;
+	border: 1px solid #333;
+}
+
+/* Styling for input fields */
+.dark-mode input,
+.dark-mode select {
+	background-color: #1e1e1e;
+	color: #e0e0e0;
+	border: 1px solid #333;
+}
+
+/* Styling for sliders */
+.dark-mode input[type="range"] {
+	background-color: #333;
+	accent-color: #f0b429;
+	/* Highlight color */
+}
+
+/* Styling for alerts */
+.dark-mode .alert {
+	background-color: #2b2b2b;
+	color: #fff;
+}
+
+/* Sidebar-specific styling */
+.dark-mode #sidebar {
+	background-color: #1e1e1e;
+	color: #fff;
+}
+
+.dark-mode #sidebar .sidebar-link {
+	color: #bbb;
+}
+
+.dark-mode #sidebar .sidebar-link:hover {
+	background-color: rgba(255, 255, 255, 0.1);
 }
