@@ -1,17 +1,18 @@
 <!-- Home page/Start Page of website -->
 
+<?php require_once 'common/config.php'; ?>
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Algorithm Visualization</title>
+	<title><?= SITE_TITLE ?></title>
 </head>
 
 <body>
 	<div class="wrapper">
-		<?php include 'common/nav_bar.php'; ?>
+		<?php require_once COMMON_PATH . 'nav_bar.php'; ?>
 		<div class="main p-3">
 
 			<!-- Page title and subtitle -->
@@ -39,7 +40,10 @@
 					<a href="../data-structures-page/data_structures.php" class="card mb-4 text-decoration-none text-dark">
 						<div class="card-body">
 							<div class="card-img-top-wrapper">
-								<img src="../manim-renders/gifs/MainDataStructureRender.gif" class="card-img-top rounded-top" alt="Data Structures Visualization">
+								<video autoplay muted loop playsinline class="card-video rounded-top" loading="lazy">
+									<source src="../manim-renders/media/videos/main_data_structures_render/1080p60/MainDataStructureRender.mp4" type="video/mp4" aria-label="Data Structures Visualization">
+									Your browser does not support the video tag.
+								</video>
 							</div>
 							<div class="card-body text-center">
 								<h5 class="card-title fw-bold">Data Structures</h5>
@@ -52,7 +56,10 @@
 					<a href="../sorting-algorithms-page/sorting_alghorithms.php" class="card mb-4 text-decoration-none text-dark">
 						<div class="card-body">
 							<div class="card-img-top-wrapper">
-								<img src="../temp/Sorting_Algo_Card.gif" class="card-img-top rounded-top" alt="Sorting Algorithms Visualization">
+								<video autoplay muted loop playsinline class="card-video rounded-top" loading="lazy">
+									<source src="../manim-renders/media/videos/sorting_algorithms_render/1080p60/SortingAlgorithmsRender.mp4" type="video/mp4" aria-label="Sorting Algorithms Visualization">
+									Your browser does not support the video tag.
+								</video>
 							</div>
 							<div class="card-body text-center">
 								<h5 class="card-title fw-bold">Sorting Algorithms</h5>
@@ -65,7 +72,10 @@
 					<a href="../search-algorithms-page/search_algorithms.php" class="card mb-4 text-decoration-none text-dark">
 						<div class="card-body">
 							<div class="card-img-top-wrapper">
-								<img src="../temp/Search_Algo_Card.gif" class="card-img-top rounded-top" alt="Sorting Algorithms Visualization">
+								<video autoplay muted loop playsinline class="card-video rounded-top" loading="lazy">
+									<source src="../manim-renders/media/videos/search_algorithms_render/1080p60/SearchAlgorithmsRender.mp4" type="video/mp4" aria-label="Search Algorithms Visualization">
+									Your browser does not support the video tag.
+								</video>
 							</div>
 							<div class="card-body text-center">
 								<h5 class="card-title fw-bold">Search Algorithms</h5>
@@ -93,7 +103,10 @@
 					<a href="algorithm-visuals/graph-algorithms/graph_algorithms.php" class="card mb-4 text-decoration-none text-dark">
 						<div class="card-body">
 							<div class="card-img-top-wrapper">
-								<img src="../temp/Graph_Algo_Card.gif" class="card-img-top rounded-top" alt="Graph Algorithms Visualization">
+								<video autoplay muted loop playsinline class="card-video rounded-top" loading="lazy">
+									<source src="../manim-renders/media/videos/graph_algorithms_render/1080p60/GraphAlgorithmsRender.mp4" type="video/mp4" aria-label="Graph Algorithms Visualization">
+									Your browser does not support the video tag.
+								</video>
 							</div>
 							<div class="card-body text-center">
 								<h5 class="card-title fw-bold">Graph Algorithms</h5>
@@ -106,7 +119,10 @@
 					<a href="../backtracking-algorithms/backtracking_algorithms.php" class="card mb-4 text-decoration-none text-dark">
 						<div class="card-body">
 							<div class="card-img-top-wrapper">
-								<img src="../temp/Backtracking_Algo_Card.gif" class="card-img-top rounded-top" alt="Backtracking Algorithms Visualization">
+								<video autoplay muted loop playsinline class="card-video rounded-top" loading="lazy">
+									<source src="../manim-renders/media/videos/backtracking_algorithms_render/1080p60/BacktrackingAlgorithmsRender.mp4" type="video/mp4" aria-label="Backtracking Algorithms Visualization">
+									Your browser does not support the video tag.
+								</video>
 							</div>
 							<div class="card-body text-center">
 								<h5 class="card-title fw-bold">Backtracking Algorithms</h5>
@@ -134,7 +150,10 @@
 					<a href="../dynamic-programming/dynamic_programming.php" class="card mb-4 text-decoration-none text-dark">
 						<div class="card-body">
 							<div class="card-img-top-wrapper">
-								<img src="../temp/Dynamic_Programming_Card.gif" class="card-img-top rounded-top" alt="Dynamic Programming Visualization">
+								<video autoplay muted loop playsinline class="card-video rounded-top" loading="lazy">
+									<source src="../manim-renders/media/videos/dynamic_programming_render/1080p60/DynamicProgrammingRender.mp4" type="video/mp4" aria-label="Dynamic Programming Visualization">
+									Your browser does not support the video tag.
+								</video>
 							</div>
 							<div class="card-body text-center">
 								<h5 class="card-title fw-bold">Dynamic Programming</h5>
@@ -148,7 +167,10 @@
 					<a href="../greedy-algorithms/greedy_algorithms.php" class="card mb-4 text-decoration-none text-dark">
 						<div class="card-body">
 							<div class="card-img-top-wrapper">
-								<img src="../temp/Greedy_Algo_Card.gif" class="card-img-top rounded-top" alt="Greedy Algorithms Visualization">
+								<video autoplay muted loop playsinline class="card-video rounded-top" loading="lazy">
+									<source src="../manim-renders/media/videos/greedy_algorithms_render/1080p60/GreedyAlgorithmsRender.mp4" type="video/mp4" aria-label="Greedy Algorithms Visualization">
+									Your browser does not support the video tag.
+								</video>
 							</div>
 							<div class="card-body text-center">
 								<h5 class="card-title fw-bold">Greedy Algorithms</h5>
@@ -162,7 +184,10 @@
 					<a href="../string-algorithms/string_algorithms.php" class="card mb-4 text-decoration-none text-dark">
 						<div class="card-body">
 							<div class="card-img-top-wrapper">
-								<img src="../temp/String_Algo_Card.gif" class="card-img-top rounded-top" alt="String Algorithms Visualization">
+								<video autoplay muted loop playsinline class="card-video rounded-top" loading="lazy">
+									<source src="../manim-renders/media/videos/string_algorithms_render/1080p60/StringAlgorithmsRender.mp4" type="video/mp4" aria-label="String Algorithms Visualization">
+									Your browser does not support the video tag.
+								</video>
 							</div>
 							<div class="card-body text-center">
 								<h5 class="card-title fw-bold">String Algorithms</h5>
@@ -189,7 +214,10 @@
 					<a href="../machine-learning/machine_learning.php" class="card mb-4 text-decoration-none text-dark">
 						<div class="card-body">
 							<div class="card-img-top-wrapper">
-								<img src="../temp/Machine_Learning_Card.gif" class="card-img-top rounded-top" alt="Machine Learning Algorithms Visualization">
+								<video autoplay muted loop playsinline class="card-video rounded-top" loading="lazy">
+									<source src="../manim-renders/media/videos/machine_learning_render/1080p60/MachineLearningRender.mp4" type="video/mp4" aria-label="Machine Learning Visualization">
+									Your browser does not support the video tag.
+								</video>
 							</div>
 							<div class="card-body text-center">
 								<h5 class="card-title fw-bold">Machine Learning Algorithms</h5>
@@ -203,7 +231,10 @@
 					<a href="../quantum-algorithms/quantum_algorithms.php" class="card mb-4 text-decoration-none text-dark">
 						<div class="card-body">
 							<div class="card-img-top-wrapper">
-								<img src="../temp/Quantum_Algo_Card.gif" class="card-img-top rounded-top" alt="Quantum Algorithms Visualization">
+								<video autoplay muted loop playsinline class="card-video rounded-top" loading="lazy">
+									<source src="../manim-renders/media/videos/quantum_algorithms_render/1080p60/QuantumAlgorithmsRender.mp4" type="video/mp4" aria-label="Quantum Algorithms Visualization">
+									Your browser does not support the video tag.
+								</video>
 							</div>
 							<div class="card-body text-center">
 								<h5 class="card-title fw-bold">Quantum Algorithms</h5>
@@ -218,7 +249,7 @@
 </body>
 
 <!-- Home Page Footer Section -->
-<?php include 'common/footer.php'; ?>
+<?php require_once COMMON_PATH . 'footer.php'; ?>
 
 <!-- Path to JavaScript -->
 <script src="index.js"></script>

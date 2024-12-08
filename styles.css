@@ -167,8 +167,10 @@ header {
 .card-img-top-wrapper {
 	position: relative;
 	width: 100%;
-	padding-top: 56.25%;
 	overflow: hidden;
+	display: flex;
+		align-items: center;
+		justify-content: center;
 }
 
 .card-img-top {
@@ -181,6 +183,12 @@ header {
 	border-bottom: 1px solid #ddd;
 }
 
+.card-video {
+	width: 100%;
+	height: auto;
+	border-radius: 0.25rem;
+	object-fit: cover;
+}
 .header-card {
 	transition: none;
 }
@@ -297,9 +305,11 @@ header {
 
 /* Sidebar text */
 .sidebar-link span {
-	flex-grow: 1;
-	text-align: left;
+	opacity: 0;
+		transform: translateX(-20px);
+		transition: opacity 0.6s ease, transform 0.6s ease;
 }
+
 /* Attributes for the sidebar itself */
 a.sidebar-link {
 	padding: 1rem;

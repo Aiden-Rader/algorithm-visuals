@@ -39,7 +39,10 @@
 					<a href="../[ALGORITHM_NAME]/[ALGORITHM_NAME].php" class="card mb-4 text-decoration-none text-dark">
 						<div class="card-body">
 							<div class="card-img-top-wrapper">
-								<!-- <img src="../manim-renders/gifs/[ALGORITHM_NAME].gif" class="card-img-top rounded-top" alt="Arrays Visualization"> -->
+								<video autoplay muted loop playsinline class="card-video rounded-top" loading="lazy">
+									<source src="../manim-renders/media/videos/[ALGORITHM_NAME]_render/1080p60/[ALGORITHM_NAME]Render.mp4" type="video/mp4" aria-label="[ALGORITHM NAME] Visualization">
+									Your browser does not support the video tag.
+								</video>
 							</div>
 							<div class="card-body text-center">
 								<h5 class="card-title fw-bold">[ALGORITHM NAME]</h5>
@@ -52,7 +55,10 @@
 					<a href="../[ALGORITHM_NAME]/[ALGORITHM_NAME].php" class="card mb-4 text-decoration-none text-dark">
 						<div class="card-body">
 							<div class="card-img-top-wrapper">
-								<!-- <img src="../manim-renders/gifs/[ALGORITHM_NAME].gif" class="card-img-top rounded-top" alt="Arrays Visualization"> -->
+								<video autoplay muted loop playsinline class="card-video rounded-top" loading="lazy">
+									<source src="../manim-renders/media/videos/[ALGORITHM_NAME]_render/1080p60/[ALGORITHM_NAME]Render.mp4" type="video/mp4" aria-label="[ALGORITHM NAME] Visualization">
+									Your browser does not support the video tag.
+								</video>
 							</div>
 							<div class="card-body text-center">
 								<h5 class="card-title fw-bold">[ALGORITHM NAME]</h5>
@@ -65,7 +71,10 @@
 					<a href="../[ALGORITHM_NAME]/[ALGORITHM_NAME].php" class="card mb-4 text-decoration-none text-dark">
 						<div class="card-body">
 							<div class="card-img-top-wrapper">
-								<!-- <img src="../manim-renders/gifs/[ALGORITHM_NAME].gif" class="card-img-top rounded-top" alt="Arrays Visualization"> -->
+								<video autoplay muted loop playsinline class="card-video rounded-top" loading="lazy">
+									<source src="../manim-renders/media/videos/[ALGORITHM_NAME]_render/1080p60/[ALGORITHM_NAME]Render.mp4" type="video/mp4" aria-label="[ALGORITHM NAME] Visualization">
+									Your browser does not support the video tag.
+								</video>
 							</div>
 							<div class="card-body text-center">
 								<h5 class="card-title fw-bold">[ALGORITHM NAME]</h5>

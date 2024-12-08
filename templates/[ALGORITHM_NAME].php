@@ -1,17 +1,18 @@
 <!-- [ALGORITHM NAME] Home Page of website -->
 
+<?php require_once '../common/config.php'; ?>
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>[ALGORITHM NAME]</title>
+	<title>[ALGORITHM NAME] | <?= SITE_TITLE ?></title>
 </head>
 
 <body>
 	<div class="wrapper">
-		<?php include '../common/nav_bar.php'; ?>
+		<?php require_once COMMON_PATH . 'nav_bar.php'; ?>
 		<div class="main p-3">
 
 			<!-- Page title and subtitle -->
@@ -40,7 +41,10 @@
 				<a href="../[ALGORITHM_NAME]/[ALGORITHM_NAME].php" class="card mb-4 text-decoration-none text-dark">
 					<div class="card-body">
 						<div class="card-img-top-wrapper">
-							<!-- <img src="../manim-renders/gifs/[ALGORITHM_NAME].gif" class="card-img-top rounded-top" alt="Arrays Visualization"> -->
+							<video autoplay muted loop playsinline class="card-video rounded-top" loading="lazy">
+								<source src="../manim-renders/media/videos/[ALGORITHM_NAME]_render/1080p60/[ALGORITHM_NAME]Render.mp4" type="video/mp4" aria-label="[ALGORITHM NAME] Visualization">
+								Your browser does not support the video tag.
+							</video>
 						</div>
 						<div class="card-body text-center">
 							<h5 class="card-title fw-bold">[ALGORITHM NAME]</h5>
@@ -80,11 +84,11 @@
 
 
 	<!-- Footer Section -->
-	<?php include '../common/footer.php'; ?>
+	<?php require_once COMMON_PATH . 'footer.php'; ?>
 
 	<!-- Path to Common JavaScript -->
 	<script src="../common/scripts/common_scripts.js"></script>
 
 	<!-- Scripts for [ALGORITHM NAME] Page goes here -->
-	<script src="[ALGORITHM_NAME].js"></script>
+	<script src="[ALGORITHM_NAME].js" defer></script>
 </body>

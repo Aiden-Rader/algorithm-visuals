@@ -12,3 +12,6 @@
 # Ignore files starting with . or ~
 .*
 ~*
+
+# Ignore configuration files
+*.config
