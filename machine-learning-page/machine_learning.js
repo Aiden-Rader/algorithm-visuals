@@ -1,7 +1,7 @@
 /**
  * Machine Learning Page Script
  * Description:
- * - Briefly describe what this script does, its purpose, and where it's used.
+ * - This script provides functionality for the Machine Learning page. Uses common scripts from the Common folder.
  *
  * Author: Aiden Rader
  * Date: 12.07.2024

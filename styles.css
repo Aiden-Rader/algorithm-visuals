@@ -199,24 +199,35 @@ header {
 }
 
 .typing-text {
+	word-wrap: break-word;
+	white-space: normal;
+	overflow: visible;
+	display: inline;
+	position: relative;
+}
+
+.typing-text::after {
+	content: "";
 	display: inline-block;
-	border-right: 2px solid black;
-	white-space: nowrap;
-	overflow: hidden;
+	width: 2px;
+	height: 1em;
+	background-color: black;
+	position: absolute;
 	animation: blink-cursor 1s steps(2, start) infinite;
+	right: -3px;
 }
 
 @keyframes blink-cursor {
 	0% {
-		border-right-color: black;
+		background-color: black;
 	}
 
 	50% {
-		border-right-color: transparent;
+		background-color: transparent;
 	}
 
 	100% {
-		border-right-color: black;
+		background-color: black;
 	}
 }
 /* Entire page */
@@ -391,7 +402,6 @@ a.sidebar-link:hover {
 /* Settings Page Styling */
 
 /* Dark Mode */
-/* General styles for dark mode */
 .dark-mode {
 	background-color: #121212;
 	color: #e0e0e0;
@@ -416,7 +426,6 @@ a.sidebar-link:hover {
 .dark-mode input[type="range"] {
 	background-color: #333;
 	accent-color: #f0b429;
-	/* Highlight color */
 }
 
 /* Styling for alerts */

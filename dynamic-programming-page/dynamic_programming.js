@@ -1,14 +1,11 @@
 /**
- * [ALGORITHM/FEATURE NAME]
+ * Dynamic Programming Page Script
  * Description:
- * - Briefly describe what this script does, its purpose, and where it's used.
+ * - This script provides functionality for the Dynamic Programming page. Uses common scripts from the Common folder.
  *
  * Author: Aiden Rader
- * Date: mm.dd.yyyy
+ * Date: 12.08.2024
  *
- * Notes:
- * - Mention any assumptions or constraints.
- * - Highlight dependencies or required libraries (like jQuery).
  */
 
 // Ensure the script runs only after the DOM is ready
