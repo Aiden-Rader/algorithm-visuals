@@ -1,10 +1,10 @@
 /**
- * Sorting Algoirthms Page Script
+ * Machine Learning Page Script
  * Description:
  * - Briefly describe what this script does, its purpose, and where it's used.
  *
  * Author: Aiden Rader
- * Date: 12.06.2024
+ * Date: 12.07.2024
  *
  */
 
@@ -15,7 +15,7 @@ $(document).ready(function () {
 	// Inital function calls
 	observeCards();
 	markComingSoonCards();
-	initTypingAnimation("Sorting Algorithms", "typing-text-SortA");
+	initTypingAnimation("Machine Learning", "typing-text-MachineL");
 
 	// ==============================
 	// Constants and Configurations

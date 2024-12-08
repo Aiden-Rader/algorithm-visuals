@@ -1,7 +1,5 @@
 <?php
 
-require_once COMMON_PATH . 'config.php';
-
 // Database class, mainly used to connect to the database, is the base class for all other classes that interact with the database
 class db
 {

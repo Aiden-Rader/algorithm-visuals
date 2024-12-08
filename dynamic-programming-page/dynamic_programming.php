@@ -1,4 +1,4 @@
-<!-- Sorting Algorithms Home Page of website -->
+<!-- Dynamic Programming Home Page of website -->
 
 <?php require_once '../common/config.php'; ?>
 <!DOCTYPE html>
@@ -7,19 +7,19 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Sorting Algorithms | <?= SITE_TITLE ?></title>
+	<title>Dynamic Programming | <?= SITE_TITLE ?></title>
 </head>
 
 <body>
 	<div class="wrapper">
-		<?php include '../common/nav_bar.php'; ?>
+		<?php require_once COMMON_PATH . 'nav_bar.php'; ?>
 		<div class="main p-3">
 
 			<!-- Page title and subtitle -->
 			<div class="card mb-4 header-card">
 				<div class="card-body text-center">
-					<h1 class="card-title display-4 typing-text" id="typing-text-SortA"></h1>
-					<p class="card-text lead">This is where you can visualize sorting algorithms. Sorting algorithms are used to sort data in a specific order. We have examples of Bubble Sort, Selection Sort, Insertion Sort, and more!</p>
+					<h1 class="card-title display-4 typing-text" id="typing-text-DynamicP"></h1>
+					<p class="card-text lead">Dynamic Programming is an algorithmic technique used to solve complex problems by breaking them down into smaller subproblems. It can be used to solve optimization problems by computing the solutions to subproblems and combining them to solve the original problem.</p>
 				</div>
 			</div>
 
@@ -83,11 +83,11 @@
 	</div>
 
 	<!-- Footer Section -->
-	<?php include '../common/footer.php'; ?>
+	<?php require_once COMMON_PATH . 'footer.php'; ?>
 
 	<!-- Path to Common JavaScript -->
-	<script src="/common/scripts/common_scripts.js"></script>
+	<script src="../common/scripts/common_scripts.js"></script>
 
-	<!-- Scripts for Sorting Algorithms Page goes here -->
-	<script src="sorting_algorithms.js"></script>
+	<!-- Scripts for Dynamic Programming Page goes here -->
+	<script src="dynamic_programming.js" defer></script>
 </body>

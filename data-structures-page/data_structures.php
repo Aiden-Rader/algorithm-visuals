@@ -19,7 +19,7 @@
 			<div class="card mb-4 header-card">
 				<div class="card-body text-center">
 					<h1 class="card-title display-4 typing-text" id="typing-text-DS"></h1>
-					<p class="card-text lead">This is where you can visualize different commonly used data structures.</p>
+					<p class="card-text lead">Dive into the world of essential data structures and learn how they efficiently organize and manage data.</p>
 				</div>
 			</div>
 

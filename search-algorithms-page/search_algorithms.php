@@ -18,7 +18,7 @@
 			<div class="card mb-4 header-card">
 				<div class="card-body text-center">
 					<h1 class="card-title display-4 typing-text" id="typing-text-SearchA"></h1>
-					<p class="card-text lead">This is where you can visualize search algorithms. Search algorithms are used to find specific elements in a data structure.</p>
+					<p class="card-text lead">This is where you can visualize search algorithms. Search algorithms are used to find specific elements in a data structure. We have examples of Linear Search, Binary Search, and more!</p>
 				</div>
 			</div>
 

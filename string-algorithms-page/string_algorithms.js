@@ -1,11 +1,14 @@
 /**
- * Sorting Algoirthms Page Script
+ * [ALGORITHM/FEATURE NAME]
  * Description:
  * - Briefly describe what this script does, its purpose, and where it's used.
  *
  * Author: Aiden Rader
- * Date: 12.06.2024
+ * Date: mm.dd.yyyy
  *
+ * Notes:
+ * - Mention any assumptions or constraints.
+ * - Highlight dependencies or required libraries (like jQuery).
  */
 
 // Ensure the script runs only after the DOM is ready
@@ -15,7 +18,7 @@ $(document).ready(function () {
 	// Inital function calls
 	observeCards();
 	markComingSoonCards();
-	initTypingAnimation("Sorting Algorithms", "typing-text-SortA");
+	initTypingAnimation("String Algorithms", "typing-text-StringA");
 
 	// ==============================
 	// Constants and Configurations

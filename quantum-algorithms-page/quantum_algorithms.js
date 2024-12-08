@@ -1,10 +1,10 @@
 /**
- * Sorting Algoirthms Page Script
+ * Quantum Algoirthms Page Script
  * Description:
  * - Briefly describe what this script does, its purpose, and where it's used.
  *
  * Author: Aiden Rader
- * Date: 12.06.2024
+ * Date: 12.07.2024
  *
  */
 
@@ -15,7 +15,7 @@ $(document).ready(function () {
 	// Inital function calls
 	observeCards();
 	markComingSoonCards();
-	initTypingAnimation("Sorting Algorithms", "typing-text-SortA");
+	initTypingAnimation("Quantum Algorithms", "typing-text-QuantumA");
 
 	// ==============================
 	// Constants and Configurations

@@ -7,9 +7,7 @@
 	</noscript>
 </head>
 
-<?php
-$currentPage = basename($_SERVER['PHP_SELF'], ".php"); // Get the current page name
-?>
+<?php $currentPage = basename($_SERVER['PHP_SELF'], ".php");?>
 
 <div class="wrapper">
 	<aside id="sidebar">

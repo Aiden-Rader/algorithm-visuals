@@ -1,12 +1,12 @@
 <!-- Graph Algorithms Home Page of website -->
-
+<?php require_once '../common/config.php'; ?>
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Graph Algorithms</title>
+	<title>Graph Algorithms | <?= SITE_TITLE ?></title>
 </head>
 
 <body>
@@ -18,7 +18,7 @@
 			<div class="card mb-4 header-card">
 				<div class="card-body text-center">
 					<h1 class="card-title display-4 typing-text" id="typing-text-GraphA"></h1>
-					<p class="card-text lead">This is where you can visualize graph algorithms. Graph algorithms are used to represent and manipulate graphs.</p>
+					<p class="card-text lead">Graph algorithms represent and manipulate graphs. Graphs model real-world data, such as social networks and web graphs. They can solve problems like finding the shortest path and testing connectivity.</p>
 				</div>
 			</div>
 			<div class="my-4"></div>

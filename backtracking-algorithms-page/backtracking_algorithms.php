@@ -1,4 +1,4 @@
-<!-- Sorting Algorithms Home Page of website -->
+<!-- Backtracking Algorithms Home Page of website -->
 
 <?php require_once '../common/config.php'; ?>
 <!DOCTYPE html>
@@ -7,19 +7,19 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Sorting Algorithms | <?= SITE_TITLE ?></title>
+	<title>Backtracking Algorithms | <?= SITE_TITLE ?></title>
 </head>
 
 <body>
 	<div class="wrapper">
-		<?php include '../common/nav_bar.php'; ?>
+		<?php require_once COMMON_PATH . 'nav_bar.php'; ?>
 		<div class="main p-3">
 
 			<!-- Page title and subtitle -->
 			<div class="card mb-4 header-card">
 				<div class="card-body text-center">
-					<h1 class="card-title display-4 typing-text" id="typing-text-SortA"></h1>
-					<p class="card-text lead">This is where you can visualize sorting algorithms. Sorting algorithms are used to sort data in a specific order. We have examples of Bubble Sort, Selection Sort, Insertion Sort, and more!</p>
+					<h1 class="card-title display-4 typing-text" id="typing-text-BacktrackA"></h1>
+					<p class="card-text lead">Backtracking algorithms are a type of algorithm that are used to find all (or some) solutions to a problem by incrementally building up candidates to the solutions and then abadoning each partial candidate ("backtracking") as soon as it is determined that it cannot possibly be completed to a valid solution. </p>
 				</div>
 			</div>
 
@@ -83,11 +83,11 @@
 	</div>
 
 	<!-- Footer Section -->
-	<?php include '../common/footer.php'; ?>
+	<?php require_once COMMON_PATH . 'footer.php'; ?>
 
 	<!-- Path to Common JavaScript -->
-	<script src="/common/scripts/common_scripts.js"></script>
+	<script src="../common/scripts/common_scripts.js"></script>
 
-	<!-- Scripts for Sorting Algorithms Page goes here -->
-	<script src="sorting_algorithms.js"></script>
+	<!-- Scripts for Backtracking Algorithms Page goes here -->
+	<script src="backtracking_algorithms.js" defer></script>
 </body>
