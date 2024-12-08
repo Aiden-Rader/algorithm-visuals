@@ -11,6 +11,7 @@
  * - Requires jQuery.
  * - Requires GSAP (ScrollTrigger, IntersectionObserver) for animations.
  * - Requires common_scripts.js for utility functions.
+ * - Requires config.php for site configuration.
  */
 
 $(document).ready(function () {
