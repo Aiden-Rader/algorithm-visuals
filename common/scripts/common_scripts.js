@@ -6,6 +6,47 @@
  * Contains reusable functions for animations and common page behavior.
  */
 
+// Tiny typist module for the typing animation (more efficient than the original)
+const Typist = (function () {
+	const timers = new Map();
+
+	function clear(el) {
+		const t = timers.get(el);
+		if (t) {
+			clearInterval(t);
+			timers.delete(el);
+		}
+		el.classList.remove('typing-cursor');
+	}
+
+	function start(text, el, { speed = 28, cursor = true } = {}) {
+		clear(el);
+
+		// Reduced motion: render instantly
+		if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+			el.textContent = text;
+			return;
+		}
+
+		el.textContent = '';
+		if (cursor) {
+			el.classList.add('typing-cursor');
+		}
+
+		let i = 0;
+		const ID = setInterval(function () {
+			el.textContent = text.slice(0, i++);
+			if (i > text.length) {
+				clear(el);
+			}
+		}, speed);
+
+		timers.set(el, ID);
+	}
+
+	return { start, clear };
+})();
+
 /**
  * Adds the "coming-soon" class to cards with a `<p>` element
  * that contains the exact phrase "COMING SOON: ".
@@ -24,9 +65,11 @@ function markComingSoonCards() {
  * when they enter the viewport.
  */
 function observeCards() {
-	var observerOptions = { threshold: 0.35 };
-	var observer = new IntersectionObserver((entries, observer) => {
-		entries.forEach(entry => {
+	var observerOptions = {
+		threshold: 0.35
+	};
+	var observer = new IntersectionObserver(function (entries, observer) {
+		entries.forEach(function (entry) {
 			if (entry.isIntersecting) {
 				$(entry.target).addClass("visible");
 				observer.unobserve(entry.target);
@@ -45,23 +88,12 @@ function observeCards() {
  * @param {string} text - The text to display with the typing animation.
  * @param {string} elementId - The ID of the target element where the text will be typed.
  */
-function initTypingAnimation(text, elementId) {
+function initTypingAnimation(text, elementId, speed = 28, cursor = true) {
 	var targetElement = $("#" + elementId);
 
-	typeCharacter(targetElement, text);
-}
-
-/**
- * Types each character of the provided text into the target element.
- *
- * @param {jQuery} targetElement - The target element where the text will be typed.
- * @param {string} text - The text to display with the typing animation.
- * @param {number} [speed=150] - The speed at which the text is typed (in milliseconds).
- */
-function typeCharacter(targetElement, text, speed = 150) {
-	for (var charIndex = 0; charIndex < text.length; charIndex++) {
-		setTimeout(function (charIndex) {
-			targetElement.text(targetElement.text() + text.charAt(charIndex));
-		}, speed * charIndex, charIndex);
+	if (!targetElement || targetElement.length === 0) {
+		return;
 	}
+
+	Typist.start(text, targetElement[0], { speed: speed, cursor: cursor });
 }

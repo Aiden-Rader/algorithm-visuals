@@ -169,8 +169,8 @@ header {
 	width: 100%;
 	overflow: hidden;
 	display: flex;
-		align-items: center;
-		justify-content: center;
+	align-items: center;
+	justify-content: center;
 }
 
 .card-img-top {
@@ -198,38 +198,31 @@ header {
 	box-shadow: none;
 }
 
+/* Typing animation */
 .typing-text {
-	word-wrap: break-word;
+	position: relative;
+	display: inline;
 	white-space: normal;
 	overflow: visible;
-	display: inline;
-	position: relative;
+	word-wrap: break-word;
 }
 
 .typing-text::after {
 	content: "";
-	display: inline-block;
 	width: 2px;
 	height: 1em;
 	background-color: black;
+	background-color: currentColor;
 	position: absolute;
-	animation: blink-cursor 1s steps(2, start) infinite;
+	animation: blink-cursor 1s steps(1, start) infinite;
 	right: -3px;
 }
 
 @keyframes blink-cursor {
-	0% {
-		background-color: black;
-	}
-
-	50% {
-		background-color: transparent;
-	}
-
-	100% {
-		background-color: black;
-	}
+	0%, 49% { background-color: black; }
+	50%,100% { background-color: transparent; }
 }
+
 /* Entire page */
 .main {
 	flex-grow: 1;

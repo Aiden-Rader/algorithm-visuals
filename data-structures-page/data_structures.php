@@ -39,7 +39,7 @@
 			<div class="row justify-content-center">
 				<!-- Arrays -->
 				<div class="col-md-4 content-card">
-					<a href="../array/array.php" class="card mb-4 text-decoration-none text-dark">
+					<a href="../data-structures-page/array/array.php" class="card mb-4 text-decoration-none text-dark">
 						<div class="card-body">
 							<div class="card-img-top-wrapper">
 								<video autoplay muted loop playsinline class="card-video rounded-top" loading="lazy">

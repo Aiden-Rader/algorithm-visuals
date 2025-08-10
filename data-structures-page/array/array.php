@@ -11,19 +11,19 @@
 
 <body>
 	<div class="wrapper">
-		<?php include '../common/nav_bar.php'; ?>
+		<?php include '/common/nav_bar.php'; ?>
 
 		<!-- Page title and subtitle -->
 		<div class="card mb-4 header-card">
 			<div class="card-body text-center">
-				<h1 class="card-title">
+				<h1 class="card-title" id="typing-text-Arrays">
 					<i class="fa-solid fa-sitemap"></i>Arrays
 				</h1>
-				<p class="card-text">This is where you can visualize the commonly used data structure of Arrays.</p>
+				<p class="card-text"></p>
 			</div>
 		</div>
 	</div>
 
 	<!-- Footer Section -->
-	<?php include '../common/footer.php'; ?>
+	<?php include '/common/footer.php'; ?>
 </body>

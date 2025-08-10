@@ -1,10 +1,10 @@
 /**
- * Data Structures Page Script
+ * [ALGORITHM/FEATURE NAME]
  * Description:
- * - Implements the visualization for the data structures page. Handles user input, executes algorithms, and displays the results.
+ * - Briefly describe what this script does, its purpose, and where it's used.
  *
  * Author: Aiden Rader
- * Date: 12.06.2024
+ * Date: 02.20.2025
  *
  * Notes:
  * - Mention any assumptions or constraints.
@@ -13,11 +13,9 @@
 
 // Ensure the script runs only after the DOM is ready
 $(document).ready(function () {
+	console.log("jQuery is ready!");
 
-	// Inital function calls
-	observeCards();
-	markComingSoonCards();
-	initTypingAnimation("Data Structures", "typing-text-DS");
+	initTypingAnimation("Data Structures", "typing-text-Arrays");
 
 	// ==============================
 	// Event Handlers
@@ -70,6 +68,7 @@ function logMessage(message, type = "info") {
 function mainFunction(input) {
 	logMessage("Executing mainFunction with input: " + input, "info");
 
+	// Your algorithm/feature implementation goes here
 	let result = input; // Replace this with actual logic
 	return result;
 }

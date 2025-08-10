@@ -126,7 +126,6 @@ class db
 		return $recordset;
 	}
 
-
 	/**
 	 * Returns the database connection resource
 	 *

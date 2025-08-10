@@ -23,7 +23,14 @@ $(document).ready(function () {
 
 	// Scroll to top when the button is clicked
 	$('#back-to-top').click(function () {
-		gsap.to(window, { duration: 1, scrollTo: { y: 0, ease: 'power2.out' } });
+		gsap.to(window, {
+			duration: 1,
+			scrollTo: {
+				y: 0,
+				autoKill: false,
+				ease: 'power2.out'
+			}
+		});
 		return false;
 	});
 });
