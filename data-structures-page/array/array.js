@@ -13,34 +13,25 @@
 
 // Ensure the script runs only after the DOM is ready
 $(document).ready(function () {
-	console.log("jQuery is ready!");
 
-	initTypingAnimation("Data Structures", "typing-text-Arrays");
+	initTypingAnimation("Data Structures", "typing-text-Arrays", 78, true);
 
 	// ==============================
 	// Event Handlers
 	// ==============================
+	$(document).on('DOMContentLoaded', function () {
+		if (!window.CodeRunner) {
+			return; // UMD exported
+		}
+		// Initialize CodeRunner for Python code execution
+		const runner = new window.CodeRunner('#editor', 'python');
 
-	/**
-	 * Event listener example for button click.
-	 */
-	$("#executeButton").click(function () {
-		logMessage("Button clicked!", "info");
-
-		// Example: Run the main function with test input
-		const testInput = [1, 2, 3, 4];
-		const result = mainFunction(testInput);
-		$("#result").text("Result: " + result);
-	});
-
-	/**
-	 * Example for handling user input changes
-	 */
-	$("#userInput").on("input", function () {
-		const inputValue = $(this).val();
-		logMessage("User input: " + inputValue, "info");
+		$('#run').on('click', function () {
+			runner.runCode('#output');
+		});
 	});
 });
+
 
 // ==============================
 // Utility Functions

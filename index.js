@@ -19,5 +19,5 @@ $(document).ready(function () {
 	// Inital function calls
 	observeCards();
 	markComingSoonCards();
-	initTypingAnimation("Welcome to Algorithm Visualization!", "typing-text-home");
+	initTypingAnimation("Welcome to Algorithm Visualization!", "typing-text-home", 58, true);
 });

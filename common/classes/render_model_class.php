@@ -23,7 +23,7 @@ class RenderModel
 	 */
 	public function getAllRenders(): mixed
 	{
-		$sql = "SELECT RenderID, Title, Description, MediaPath FROM Renders";
+		$sql = "SELECT RenderID, Title, [Description], MediaPath FROM Renders";
 		return $this->db->query($sql);
 	}
 
@@ -35,7 +35,7 @@ class RenderModel
 	 */
 	public function getRenderById($renderID): array|bool
 	{
-		$sql = "SELECT RenderID, Title, Description, MediaPath FROM Renders WHERE RenderID = ?";
+		$sql = "SELECT RenderID, Title, [Description], MediaPath FROM Renders WHERE RenderID = ?";
 		$stmt = sqlsrv_prepare($this->db->get_dbconn(), $sql, [$renderID]);
 		if (sqlsrv_execute($stmt)) {
 			return sqlsrv_fetch_array($stmt, SQLSRV_FETCH_ASSOC);

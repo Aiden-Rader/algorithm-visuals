@@ -17,7 +17,7 @@ $(document).ready(function () {
 	// Inital function calls
 	observeCards();
 	markComingSoonCards();
-	initTypingAnimation("Data Structures", "typing-text-DS");
+	initTypingAnimation("Data Structures", "typing-text-DS", 78, true);
 
 	// ==============================
 	// Event Handlers

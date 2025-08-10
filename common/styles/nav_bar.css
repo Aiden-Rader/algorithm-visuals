@@ -1,0 +1,154 @@
+::after,
+::before {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+/* Sidebar object itself */
+#sidebar {
+	width: 70px;
+	min-width: 70px;
+	transition: all .25s ease-in-out;
+	background-color: #343a40;
+	display: flex;
+	flex-direction: column;
+}
+
+/* When sidebar is expanded */
+#sidebar.expand {
+	width: 250px;
+	min-width: 250px;
+}
+
+/* Attributes for the toggle button/dropdown button */
+.btn_toggle {
+	background-color: transparent;
+	cursor: pointer;
+	border: 0;
+	padding: 1rem 1.5rem;
+}
+
+/* Toggle/dropdown button style */
+.btn_toggle i {
+	font-size: 1.5rem;
+	color: #FFF;
+}
+
+/* Sidebar logo style */
+.sidebar-logo {
+	margin: auto 0;
+}
+
+/* Sidebar logo text style */
+.sidebar-logo a {
+	color: #FFF;
+	font-size: 1.15rem;
+	font-weight: 600;
+}
+
+/* Attributes for when the sidebar is not expanded */
+#sidebar:not(.expand) .sidebar-link span {
+	opacity: 0;
+	transform: translateX(-8px);
+	pointer-events: none;
+}
+
+/* This SHOULD be the nav bar */
+.sidebar-nav {
+	padding: 2rem 0;
+	flex: 1 1 auto;
+}
+
+/* Sidebar links style */
+.sidebar-link {
+	display: flex;
+	align-items: center;
+	padding: 0.75rem;
+}
+
+/* Sidebar text */
+.sidebar-link span {
+	opacity: 1;
+	transform: translateX(-20px);
+	transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+/* Attributes for the sidebar itself */
+a.sidebar-link {
+	padding: 1rem;
+	color: #FFF;
+	display: flex;
+	align-items: center;
+	font-size: 0.9rem;
+}
+
+/* Attributes for the icons on sidebar */
+.sidebar-link i {
+	font-size: 1.5rem;
+	min-width: 24px;
+	text-align: center;
+	margin-right: 10px;
+}
+
+/* Attributes for the text on sidebar */
+a.sidebar-link:hover {
+	background-color: rgba(255, 255, 255, 0.1);
+	border-left: 3px solid #343a40;
+}
+
+/* The entire sidebar */
+.sidebar-item {
+	position: relative;
+	margin: 0;
+}
+
+/* When sidebar is not expanded sidebar and dropdown styles */
+#sidebar:not(.expand) .sidebar-item .sidebar-dropdown {
+	position: absolute;
+	top: 0;
+	left: 70px;
+	background-color: #343a40;
+	padding: 0;
+	min-width: 15rem;
+	display: none;
+}
+
+/* When sidebar is not expanded hover and click styles */
+#sidebar:not(.expand) .sidebar-item:hover .has-dropdown+.sidebar-dropdown {
+	display: block;
+	max-height: 15em;
+	width: 100%;
+	opacity: 1;
+}
+
+/* When sidebar is expanded styles for dropdown */
+#sidebar.expand .sidebar-link[data-bs-toggle="collapse"]::after {
+	border: solid;
+	border-width: 0 .075rem .075rem 0;
+	content: "";
+	display: inline-block;
+	padding: 2px;
+	position: absolute;
+	right: 1.5rem;
+	top: 1.4rem;
+	transform: rotate(-135deg);
+	transition: all .2s ease-out;
+}
+
+/* When sidebar is expanded styles for dropdown links */
+#sidebar.expand .sidebar-link[data-bs-toggle="collapse"].collapsed::after {
+	transform: rotate(45deg);
+	transition: all .2s ease-out;
+}
+
+/* Hide "About" dropdown when sidebar is collapsed */
+#sidebar:not(.expand) #about_dropdown {
+	display: none !important;
+}
+
+.sidebar-item.active .sidebar-link {
+	background-color: rgba(255, 255, 255, 0.1);
+	border-left: 3px solid #FFF;
+	font-weight: bold;
+}

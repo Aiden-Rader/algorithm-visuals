@@ -15,7 +15,7 @@
 				<ul class="footer-links list-unstyled">
 					<li><a href="https://www.linkedin.com/in/aiden-rader/" target="_blank"><i class="fa-brands fa-linkedin"></i> LinkedIn</a></li>
 					<li><a href="https://github.com/Aiden-Rader" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a></li>
-					<li><a href="/about-page/about.php"><i class="fa-solid fa-info-circle"></i> About</a></li>
+					<li><a href="/about-page/creator-page/creator.php"><i class="fa-solid fa-info-circle"></i> About</a></li>
 				</ul>
 			</div>
 
@@ -28,15 +28,7 @@
 	</div>
 
 	<!-- Back to Top Button -->
-	<button id="back-to-top" title="Go to top">
+	<button id="back-to-top" class="btn btn-primary position-fixed" style="right:1rem;bottom:1rem;display:none;" title="Go to top">
 		<i class="fa-solid fa-arrow-up"></i>
 	</button>
-
-	<!-- Scripts for Graph Algorithms Page goes here -->
-	<script src="/common/scripts/footer.js"></script>
-
-	<!-- Path to GSAP, used for scrolling animations -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollToPlugin.min.js"></script>
-
 </footer>
